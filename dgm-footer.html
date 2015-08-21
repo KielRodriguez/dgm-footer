@@ -9,7 +9,78 @@ Example:
 @element dgb-footer
 @demo src/dgm-footer/index.html
 -->
-<dom-module id="dgm-footer"></dom-module>
+<dom-module id="dgm-footer">
+    <template>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                    <h5>Datos</h5>
+                    <ul>
+                        <li><a href="">Cultura</a></li>
+                        <li><a href="">Salud</a></li>
+                        <li><a href="">Geografía</a></li>
+                        <li><a href="">Seguridad</a></li>
+                        <li><a href="">Medio Ambiente</a></li>
+                        <li><a href="">Educación</a></li>
+                        <li><a href="">Economía</a></li>
+                        <li><a href="">Turismo</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                    <h5>Herramientas</h5>
+                    <ul>
+                        <li><a href="">Apps Web</a></li>
+                        <li><a href="">Apps Móviles</a></li>
+                        <li><a href="">Interactivas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                    <h5>Impacto</h5>
+                    <ul>
+                        <li><a href="">Casos de uso</a></li>
+                        <li><a href="">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                    <h5>Guía</h5>
+                    <ul>
+                        <li><a href="">Pasos y recursos</a></li>
+                        <li><a href="">Tablero de avances</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                    <ul>
+                        <li><h5><a href="">Retos</a></h5></li>
+                        <li><h5><a href="">Consejo Consultivo</a></h5></li>
+                        <li><h5><a href="">Red México Abierto</a></h5></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+                    <ul>
+                        <li><h5><a href="">Retos</a></h5></li>
+                    </ul>
+                    <h5>Ayuda</h5>
+                    <ul>
+                        <li><a href="">Preguntas Frecuentes</a></li>
+                        <li><a href="">Foro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <a href="//datos.gob.mx/libreusomx" alt="Libre Uso MX">
+                        <img src="https://raw.githubusercontent.com/mxabierto/assets/master/img/ic-libre-uso.png" alt="Libre Uso MX">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <a href="http://opendefinition.org/" target="_blank">
+                        <img alt="Este material es de Conocimiento Abierto" src="http://assets.okfn.org/images/ok_buttons/ok_80x15_blue.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+</dom-module>
 <script>
     Polymer({
         is          : 'dgm-footer',
