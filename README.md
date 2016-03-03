@@ -1,4 +1,4 @@
-# dgm-navbar
+# dgm-footer
 
 Componente web polymer para definir el footer utilizado en sitios relativos a `datos.gob.mx`
 
