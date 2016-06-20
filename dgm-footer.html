@@ -27,16 +27,17 @@ Example:
         ul > li > h5 > a:hover      { text-decoration: none; font-weight: bold; }
         ul > li:first-child > h5    { margin-bottom: 5px; }
         ul > li.spacing > h5        { margin-bottom: 20px; }
+        .img-link                   { display: block; margin-bottom: 20px; }
+        .img-link.first             { margin-top: 140px;  }
         @media (max-width: 991px)   { :host { padding-top: 50px; } }
     </style>
     <template>
         <div class="main-container">
             <div class="container-fluid">
                 <div class="row hidden-sm hidden-xs">
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-2 col-lg-2">
                         <ul>
                             <li><h5><a href="//busca.datos.gob.mx/#!/conjuntos">Datos</a></h5></li>
-                            <li><a href="//busca.datos.gob.mx/#!/conjuntos?categoria=cultura">Cultura</a></li>
                             <li><a href="//busca.datos.gob.mx/#!/conjuntos?categoria=salud">Salud</a></li>
                             <li><a href="//busca.datos.gob.mx/#!/conjuntos?categoria=geoespacial">Geoespacial</a></li>
                             <li><a href="//busca.datos.gob.mx/#!/conjuntos?categoria=seguridad y justicia">Seguridad y Justicia</a></li>
@@ -50,64 +51,53 @@ Example:
                             <li><a href="//busca.datos.gob.mx/#!/conjuntos?categoria=gobiernos locales">Gobiernos Locales</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-2 col-lg-2">
                         <ul>
                             <li><h5><a href="//datos.gob.mx/herramientas">Herramientas</a></h5></li>
-                            <li><a href="//datos.gob.mx/herramientas/web">Web</a></li>
-                            <li><a href="//datos.gob.mx/herramientas/movil">Móviles</a></li>
-                            <li><a href="//datos.gob.mx/herramientas/otros">Otros</a></li>
-                        </ul>
-                        <ul>
-                            <li><h5><a href="//datos.gob.mx/impacto">Impacto</a></h5></li>
-                            <li><a href="//datos.gob.mx/impacto/casos-de-uso">Casos de uso</a></li>
-                            <li><a href="//datos.gob.mx/impacto/noticias">Noticias</a></li>
-                            <li><a href="//datos.gob.mx/impacto/avances">Avances</a></li>
+                            <li><a href="//datos.gob.mx/erramientas?category=web">Web</a></li>
+                            <li><a href="//datos.gob.mx/erramientas?category=movil">Móviles</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 col-lg-4">
+                    <div class="col-md-2 col-lg-2">
+                        <ul>
+                            <li><h5><a href="//datos.gob.mx/blog">Blog</a></h5></li>
+                            <li><a href="//datos.gob.mx/blog?category=casos-de-uso">Casos de uso</a></li>
+                            <li><a href="//datos.gob.mx/blog?category=noticias">Noticias</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-lg-2">
                         <ul>
                             <li><h5><a href="//datos.gob.mx/guia">Guía</a></h5></li>
-                            <li><a href="//datos.gob.mx/guia/introduccion">Introducción</a></li>
-                            <li><a href="//datos.gob.mx/guia/planea">Planea</a></li>
-                            <li><a href="//datos.gob.mx/guia/publica">Publica</a></li>
-                            <li><a href="//datos.gob.mx/guia/perfecciona">Perfecciona</a></li>
-                            <li><a href="//datos.gob.mx/guia/promueve">Promueve</a></li>
-                            <li><a href="//datos.gob.mx/guia/manuales-plantillas">Manuales y Plantillas</a></li>
                         </ul>
+                    </div>
+                    <div class="col-md-2 col-lg-2">
                         <ul>
-                            <li class="spacing"><h5><a href="//adela.datos.gob.mx">Adela</a></h5></li>
+                            <li class="spacing"><h5><a href="//mxabierto.org">Red México Abierto</a></h5></li>
+                            <li><h5><a href="//adela.datos.gob.mx">Adela</a></h5></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-lg-2">
+                        <ul>
                             <li><h5><a href="//datos.gob.mx/acerca">Acerca</a></h5></li>
-                            <li><h5><a href="//datos.gob.mx/privacidad">Privacidad</a></h5></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="row hidden-lg hidden-md">
-                    <div class="col-sm-6 col-xs-6">
-                        <ul>
-                            <li><a href="//busca.datos.gob.mx">Datos</a></li>
-                            <li><a href="//datos.gob.mx/herramientas">Herramientas</a></li>
-                            <li><a href="//datos.gob.mx/impacto">Impacto</a></li>
-                            <li><a href="//datos.gob.mx/guia">Guía</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-xs-6">
-                        <ul>
-                            <li><a href="//adela.datos.gob.mx">Adela</a></li>
-                            <li><a href="//datos.gob.mx/acerca">Acerca</a></li>
-                            <li><a href="//datos.gob.mx/privacidad">Privacidad</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <a href="//datos.gob.mx/libreusomx" alt="Libre Uso MX">
+                        <a href="http://opendefinition.org/" class="img-link first" target="_blank">
+                            <img alt="Este material es de Conocimiento Abierto" src="http://assets.okfn.org/images/ok_buttons/ok_80x15_blue.png">
+                        </a>
+                        <a href="//datos.gob.mx/libreusomx" class="img-link" alt="Libre Uso MX">
                             <img src="https://raw.githubusercontent.com/mxabierto/assets/master/img/ic-libre-uso.png" alt="Libre Uso MX">
                         </a>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-6">
-                        <a href="http://opendefinition.org/" target="_blank">
-                            <img alt="Este material es de Conocimiento Abierto" src="http://assets.okfn.org/images/ok_buttons/ok_80x15_blue.png">
-                        </a>
+                </div>
+                <div class="row hidden-lg hidden-md">
+                    <div class="col-sm-12 col-xs-12">
+                        <ul>
+                            <li><a href="//busca.datos.gob.mx">Datos</a></li>
+                            <li><a href="//datos.gob.mx/herramientas">Herramientas</a></li>
+                            <li><a href="//datos.gob.mx/blog">Blog</a></li>
+                            <li><a href="//datos.gob.mx/guia">Guía</a></li>
+                            <li><a href="//adela.datos.gob.mx">Adela</a></li>
+                            <li><a href="//datos.gob.mx/acerca">Acerca</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
