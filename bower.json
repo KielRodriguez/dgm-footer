@@ -1,6 +1,6 @@
 {
     "name"          : "dgm-footer",
-    "version"       : "1.0.1",
+    "version"       : "1.1.0",
     "license"       : "MIT",
     "main"          : "dgm-footer.html",
     "dependencies"  : {
